@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>es 2</title>
+  </head>
+    <body>
+  <h1>  Js ES 2</h1>
+  <h2>Static HTML page: exercise 1 but with JQuery</h2>
+
+  <div>   div 1</div>
+  <div>    div 2 </div>      
+  <div  id="div1">     Non premere il bottone   </div>
+
+ <button  id="btn1" onclick="j()" >         
+     CLICCAMI 
+    </button>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+  //  document.getElementById("div1").innerHTML = "ciao";
+     
+   //  function j(){
+     // $("#div1").html("ciao ma in JQuery");
+     //}
+    $("#div1").html("Non premere il bottone" );
+  //  $("btn1").on("click ", Function())
+   // $("btn1").click(function(){});
+     
+     $("#btn1").click(function(){
+     $("#div1").attr("style", "background-color:rgb(255,0,0");
+     $("#div1").html(" TI AVEVO DETTO DI NON PREMERE MONA  " );
+     if(rosso){
+       $.attr("style", "background-color: BLUE");
+       rosso=false;
+     }else{
+       $("#btn1").removeAttr("style");
+       rosso=true;
+     }
+
+     }); // attribuzione al bottone
+
+     console.log ($("#div1"));
+     console.log ($("#div"));
+    //  $("body").append($("<h3>   HAI AGGIUNTO UN TITOLO H3 </h3>"));  // sto andando a creare un oggetto dinamicamente
+     // $("body").append($(" <button  id= btn1 CLICCAMI </button>"));
+
+
+  </script>
+    </body>
+  </head>
+</html>
